@@ -1,0 +1,6 @@
+.TodoList {
+    list-style: none;
+    align-items: center;
+    margin: 0 40%;
+    font-size: 25px;
+}

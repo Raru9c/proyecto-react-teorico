@@ -1,0 +1,11 @@
+.TodoSearch {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    width: 30%;
+    margin: 0px 450px
+}
+
+.TodoSearch::placeholder{
+    color: green;
+    text-align: center;
+}
