@@ -36,6 +36,23 @@ function App() {
     });
   }
 
+  const completeTodos = (text) => {
+    
+    const todoIndex = todos.findIndex (todo => todo.text == text)
+    ;
+    
+    // todos[todoIndex]= {
+    //   text: todos [todoIndex].text,
+    //   completed: true
+    // }
+
+    const newTodos = [... todos]
+    newTodos[todoIndex].completed = true
+    setTodo (newTodos)
+
+
+  }
+
   return (
     <React.Fragment>
     <ToDoCounter
