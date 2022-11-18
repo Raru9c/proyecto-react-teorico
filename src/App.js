@@ -36,22 +36,21 @@ function App() {
     });
   }
 
-  const completeTodos = (text) => {
+  const completeTodos=(text) => {
     
-    const todoIndex = todos.findIndex (todo => todo.text === text)
-    ;
+  const todoIndex= todos.findIndex(todo => todo.text === text);
     
     // todos[todoIndex]= {
     //   text: todos [todoIndex].text,
     //   completed: true
     // }
 
-    const newTodos = [...todos]
-    newTodos[todoIndex].completed=true;
-    setTodo (newTodos);
-
-
-  }
+  const newTodos = [...todos];
+  newTodos[todoIndex].completed=true;
+  setTodo (newTodos)
+  
+  
+};
 
   return (
     <React.Fragment>
@@ -69,7 +68,7 @@ function App() {
       key={todo.text}  
       text={todo.text}
       completed={todo.completed} 
-      onComplete = {() => completeTodos (todos.text)}
+      onComplete= {() => completeTodos(todo.text)}
       />
      ))}
     </TodoList>
